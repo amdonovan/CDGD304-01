@@ -12,73 +12,74 @@
     </head>
 
     <body>
-    
-        <div class="nav">
-        
+            
             <ul>
             
                 <li><a href="../adonovanfolio.index.html">HOME</a></li>
             
                 <li><a href="Projects/projects.html">PROJECTS</a></li>
             
-                <li><a href="#top">CONTACT ME</a></li>
+                <li><a class="active" href="#top">CONTACT ME</a></li>
         
             </ul>
-                
-        </div>
-        
+                        
         <h2 id="top">CONTACT ME</h2>
-        
-         <address>
+        <br />
+            <address>
             
-                <p><a href="mailto:amdonovan@massart.edu">
+                <p>email: <a href="mailto:amdonovan@massart.edu">
                    amdonovan@massart.edu</a></p>
         
-        </address>
-    
+            </address>
+        
+        <footer><a href="#top">Back to Top</a></footer>     
+
     </body>
 
 <!--  FRONT END STYLE  -->
 
 <style type="text/css">
     
-    .nav{
-        color: white;
-        padding: 10px;
-        font-family: 'Montserrat', sans-serif;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: medium;
-        text-indent: 20px;
+    body{
+        margin: 0;
         background-color: black;
-        opacity: 0.75;
     }
     
      ul {
         list-style: none;
-        margin: 0;
-        padding: 0;
+        padding: 0px;
         background-color: black;
         overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: medium;
+        opacity: .85;
+        margin-top: 0;
     }
     
     li {
         float: left;
+        background: black;
+        border-right: 1px solid #bbb;
+        opacity: 1.0;
     }
     
    li a {
         display: block;
         color: white;
-       text-align: center;
-       padding: 1px;
-       text-decoration: none;
+        text-align: center;
+        padding: 8px;
+        text-decoration: none;
     }
     
     li a:hover {
-        background-color: black;
+        background-color: orange;
     }
     
      a:link {
-        color:black;
+        color:white;
         text-decoration: none;
     }
     
@@ -86,18 +87,39 @@
         color:white;
     }
     
+    .active{
+        background-color: darkorange;
+    }
+    
     h2{
-        color:black;
-        padding: 10px;
-        font-family: 'Montserrat', sans-serif;      
+        color: black;
+        padding: 20px;
+        float: left;
+        font-family: 'Montserrat', sans-serif;
+        background-color: white;
     }
     
      p{
-        color:black;
-        padding: 10px;
-        font-family: 'Neuton', serif;
+        color:white;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;      
     }
-         
+
+    p a{
+        display: block;
+    }
+    
+    footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            padding: 10px;
+        }
+    
 </style>
     
 </html>
