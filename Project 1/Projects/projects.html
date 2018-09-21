@@ -13,11 +13,15 @@
         
         <div class="nav">
     
-            <a href="../adonovanfolio.index.html">HOME</a>
-    
-            <a href="top">PROJECTS</a>
+            <ul>
             
-            <a href="../contactme.html">CONTACT ME</a>
+            <li><a href="../adonovanfolio.index.html">HOME</a></li>
+    
+            <li><a href="top">PROJECTS</a></li>
+            
+            <li><a href="../contactme.html">CONTACT ME</a></li>
+           
+            </ul>
         
         </div>    
             
@@ -33,11 +37,37 @@
             color: white;
             padding: 10px;
             font-family: 'Montserrat', sans-serif;
+             font-weight: medium;
+            text-indent: 20px;
             background-color: black;
             opacity: 0.75;
         }
         
-         a:link {
+        ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        overflow: hidden;
+    }
+    
+    li {
+        float: left;
+    }
+    
+   li a {
+        display: block;
+        color: white;
+       text-align: center;
+       padding: 1px;
+       text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: black;
+    }
+        
+        a:link {
         color:white;
         text-decoration: none;
     }
