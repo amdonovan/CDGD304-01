@@ -36,4 +36,11 @@ img.tall{
     width: 200;
     height: 300;   
 }
-    
+
+img.display{
+    display:block;
+    float:inherit;
+    margin: 10px;
+    width:100%;
+
+}
