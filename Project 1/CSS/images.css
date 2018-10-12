@@ -31,3 +31,9 @@ img.landscape {
     width: 330px;
     height: 210px;
 }
+
+img.tall{
+    width: 200;
+    height: 300;   
+}
+    
