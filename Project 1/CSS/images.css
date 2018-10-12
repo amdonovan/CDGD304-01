@@ -1,0 +1,33 @@
+<style type="text/css">
+
+.article #footer img.large {
+/*    float; left;*/
+/*    position: relative;*/
+    margin-top: 10px;
+/*    background-color: #efefef;*/
+    padding: 10px 10px 10px 10px
+}
+
+.gallery{
+/*    float: inherit;*/
+}
+
+.article {
+/*    float; left;*/
+/*    position: relative;*/
+/*    height: 100%;*/
+    
+}
+
+img.large {
+/*    float: left;*/
+/*    overflow: auto;*/
+    margin: 10px;
+/*    background-color: #efefef;*/
+    width: 300px;
+}
+
+img.landscape {
+    width: 330px;
+    height: 210px;
+}
