@@ -26,8 +26,9 @@
     
     
 <!--    <h3 id="title">Communication Design</h3>-->
-    <div class="offset"></div> 
+<!--    <div class="offset"></div> -->
     
+<!--
     <aside class="pquote">
     
         <blockquote>
@@ -37,8 +38,17 @@
         <p id=author>— Paula Scher</p>
     
     </aside>
-      
-   
+-->
+    <div class="grid_parent"> 
+   <img src="Images/ADonovan_100Things_Cover.png"
+id="feature">
+    <div class="copy">
+        <p id="title">Boston <br/> Throw Up</p>
+        <p id="description" class="disable-select">Graffiti is defined as writings or drawings scribbled, scratched, or sprayed illicitly on a wall or other surface in a public place. This rebellious sect of art comes in four forms; murals, throw ups, tags, and pieces. City graffiti is a representation of the feelings of the public, the voice of the unheard. It appears from the underground, demands attention and, in the city of Boston, has inspired action.</p>
+    
+    </div>
+        
+    </div>     
     
     <footer id=foot>
         <a href="top">BACK TO TOP</a> 
@@ -79,6 +89,11 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+    
+    .disable-select{
+        
+    }
+    
 ol, ul {
 	list-style: none;
 }
@@ -135,15 +150,45 @@ table {
         margin: 35px 0px 0px;
         
     }
+     
+    .grid_parent{
+        display:grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 1em;
+        grid-auto-rows: minmax(200px, auto);
+        grid-auto-columns: minmax(300,auto);
+/*        align-items: stretch;*/
+    }
     
     #title{
-        font-family: 'arbutus slab';
-        position: relative;
-        padding: 10px;        
+        font-family: georgia;
+        font-weight: 900;
+        grid-column: 2/3;
+        padding:20px 15px;
+        font-size: 30px;
+        
         
     }
     
-     
+    #description{
+        
+        right: 20px;
+/*        width: 25%;*/
+        font-style: georgia;
+        font-size: 10px;
+        grid-column: 2/3;
+        padding: 0px 15px;
+        
+    }
+    
+    
+    #feature{
+        display: block;
+        width: 75%;
+        grid-column: 3/6;
+        grid-row: 1/3;   
+    }
+         
     .offset{
         position: absolute;
         right:0;
@@ -152,6 +197,7 @@ table {
         background-color: rgb(255, 240, 245, 045);
         margin:10px 50px;
     }
+    
     .pquote{
         position: relative;
         float: right;
@@ -165,10 +211,7 @@ table {
         padding: 0px 20px 5px;
         border-left: 2px solid black;
         margin: 30px 25px 0px 0px;
-/*        background-color:rgb(255, 240, 245, 0.45)*/
-
-       
-        
+/*        background-color:rgb(255, 240, 245, 0.45)*/    
     }
     
     #author{
@@ -178,12 +221,6 @@ table {
         font-style:normal;
         padding: 15px 0px 10px 0px
     }
-   
-        
-        
-    
-    
-    
     
     #foot{
         position: fixed;
@@ -203,6 +240,5 @@ table {
     #foot a:visited{
         color:black;
     }
-    
     
 </style>
