@@ -17,8 +17,8 @@
         
         <body>
 
-            <ul>
-                <li><a href="../adonovanfolio.index.html">HOME</a></li>
+            <ul id=nav>
+                <li><a href="../Project%25201/homepage.index.html">HOME</a></li>
                 <li><a href="projects.html">PROJECTS</a></li>
                 <li><a class="active" href="top">ABOUT ME</a></li>
                 <li><a href="../contactme.html">CONTACT ME</a></li>
@@ -26,11 +26,11 @@
            
             </ul>
             
-            <h2 id="#top">ABOUT ME</h2>
+            <h2 id="#top">About Me</h2>
             
              <div class="article grid_4">
                 
-                <img src="Images/line%20art.png" class="large">
+                <img src="Images/teal%20copy.png" class="large">
                 
             </div>
             
@@ -55,6 +55,7 @@
         margin: 0;
     }
     
+/*
       ul {
         list-style: none;
         margin: 0;
@@ -98,14 +99,42 @@
                     a:visited {
                         color:white;
                     }
+*/
+    #nav{
+        list-style: none;
+        text-align: center;
+        position: absolute;
+        top: 15px;
+        width: 100%;
+        color: black;
+        overflow: hidden;
+        font-family: 'Brandon Grotesque';
+        font-size: 10px;
+        font-weight: medium;
+    }
+    
+    #nav li{
+        display: inline;
+    }
+    
+    #nav li a{
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+    }
+    
+    
+    
     .active{
         background-color: darkorange;
     }
     
     h2{
-        color: black;
-        padding: 20px;
-        font-family: 'Montserrat', sans-serif;
+        font-family: georgia;
+        font-weight: 900;
+/*        grid-column: 2/3;*/
+        padding: 20px 15px;
+        font-size: 30px;
     }
     
      p {
